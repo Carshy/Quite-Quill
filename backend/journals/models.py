@@ -10,7 +10,7 @@ class JournalEntry(models.Model):
         ('Travel', 'Travel'),
     ]
 
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    author = models.ForeignKey(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     content = models.TextField()
     category = models.CharField(max_length=50, choices=CATEGORY_CHOICES)
