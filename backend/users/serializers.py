@@ -61,7 +61,6 @@ class LoginSerializer(TokenObtainPairSerializer):
 
         # Add custom claims
         token['username'] = user.username
-        token['roles'] = user.roles
         return token
 
 

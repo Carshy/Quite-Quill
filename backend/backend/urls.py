@@ -25,7 +25,6 @@ urlpatterns = [
 
 urlpatterns = [
   path('admin/', admin.site.urls),
-#   path('api/', include('tale_a_tale.urls')),
   path('api/', include('users.urls')),
 ]
 
